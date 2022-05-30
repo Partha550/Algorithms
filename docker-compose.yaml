@@ -1,0 +1,11 @@
+services:
+  testapi:
+    build: .
+    ports:
+      - "6688:6688"
+    restart: always
+    container_name: substrapi
+    image: substringmatcher
+    expose: 
+      - 6688
+
